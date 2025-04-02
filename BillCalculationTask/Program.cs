@@ -20,6 +20,28 @@
             // 3: 6 people
             // Commit your changes and add screnshot evidence of your program running to the Readme
 
+            Console.WriteLine("How many people is in this group");
+int groupnumber = Convert.ToInt32(Console.ReadLine());
+int charge = 0;
+while (groupnumber < 0)
+{
+    Console.WriteLine("Invalid group number enter again");
+    groupnumber = Convert.ToInt32(Console.ReadLine());
+
+}
+{
+    if (groupnumber < 6)
+    {
+        charge = groupnumber * 15;
+
+    }
+    else
+    {
+        charge = groupnumber * 15 - 5;
+    }
+}
+Console.WriteLine("The charge is £" + charge);
+
         }
     }
 }
